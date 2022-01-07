@@ -97,7 +97,7 @@
                             <ul class="notika-main-menu-dropdown">
                                 <li><a href="fiscal.php">Classificação Fiscal</a>
                                 </li>
-                                <li><a href="marca.php">Notas</a>
+                                <li><a href="nota.php">Notas</a>
                                 </li>
                                 <li><a href="marca.php">Regra CFOP</a>
                                 </li>

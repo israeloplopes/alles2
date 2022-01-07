@@ -46,7 +46,7 @@
                                 <li><a data-toggle="collapse" data-target="#demoevent" href="#">Fiscal</a>
                                     <ul id="demoevent" class="collapse dropdown-header-top">
                                         <li><a href="marca.php">Regra CFOP</a></li>
-                                        <li><a href="fiscal.php">Classificação Fiscal</a></li>
+                                        <li><a href="fiscal.php">Classificação Fiscal</a></li>										                                        <li><a href="nota.php">Nota</a></li>										
                                     </ul>
                                 </li>
                                 <!--<li><a data-toggle="collapse" data-target="#demoevent" href="#">Email</a>
