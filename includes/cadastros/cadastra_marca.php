@@ -13,7 +13,7 @@
 									</div>
 									<div class="breadcomb-ctn">
                     <h2>MARCAS</h2>
-                    <p>Controle de <span class="bread-ntd">Marcas</span></p>
+                    <p>Controle de <span>Marcas</span></p>
 									</div>
 								</div>
 							</div>
@@ -38,7 +38,7 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="form-example-wrap">
                         <div class="cmp-tb-hd">
-                            <h2><?=TITLE?>
+                            <h2>Voltar <i class="fas fa-arrow-alt-circle-right"></i>
 															<a href="marca.php">
 																<button data-toggle="tooltip" data-placement="right" title="Voltar" class="btn"><i class="notika-icon notika-sent"></i></button>
 						                  </a>

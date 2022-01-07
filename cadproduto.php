@@ -30,10 +30,10 @@ if (isset($_POST['codemp'],$_POST['codfilial'],$_POST['codprod'],$_POST['descpro
   $obProduto->codprod   = $_POST['codprod'];
   $obProduto->descprod  = $_POST['descprod'];
   $obProduto->refprod   = $_POST['refprod'];
-  $obProduto->codalmox  = $_POST['codalmox'];  
-  $obProduto->codmoeda  = $_POST['codmoeda'];  
+  $obProduto->codalmox  = $_POST['codalmox'];
+  $obProduto->codmoeda  = $_POST['codmoeda'];
   $obProduto->codfisc   = $_POST['codfisc'];
-  $obProduto->codmarca  = $_POST['codmarca']; 
+  $obProduto->codmarca  = $_POST['codmarca'];
   $obProduto->tipoprod  = $_POST['tipoprod'];
   $obProduto->codgrup   = $_POST['codgrup'];
   $obProduto->codunid	= $_POST['codunid'];
@@ -42,7 +42,9 @@ if (isset($_POST['codemp'],$_POST['codfilial'],$_POST['codprod'],$_POST['descpro
   $obProduto->serieprod = $_POST['serieprod'];
   $obProduto->codfabprod= $_POST['codfabprod'];
   $obProduto->custoinfoprod= $_POST['custoinfoprod'];
-  $obProduto->precobaseprod= $_POST['precobaseprod'];  
+  $obProduto->precobaseprod= $_POST['precobaseprod'];
+  $obProduto->sldprod= $_POST['sldprod'];
+  $obProduto->ativoprod= $_POST['ativoprod'];    
   $obProduto->idusuins  = $_POST['idusuins'];
   $obProduto->cadastrarProduto();
 
@@ -56,10 +58,10 @@ include __DIR__.'/includes/header.php';
 
 include __DIR__.'/includes/container.php';
 
-include __DIR__.'/mnmb_home.php';
+/*include __DIR__.'/mnmb_home.php';
 
-include __DIR__.'/mnds_home.php';
+include __DIR__.'/mnds_home.php';*/
 
-include __DIR__.'/includes/cadastros/cadastra_Produto.php';
+include __DIR__.'/includes/cadastros/cadastra_produto.php';
 
 include __DIR__.'/includes/footer.php';?>

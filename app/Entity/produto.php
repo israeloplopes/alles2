@@ -20,12 +20,13 @@
     public $codgrup;
     public $codunid;
     public $codbarprod;
-	public $cloteprod;
-	public $serieprod;
-	public $codfabprod;
-	public $custoinfoprod;
-	public $precobaseprod;
-	public $sldprod;
+  	public $cloteprod;
+  	public $serieprod;
+  	public $codfabprod;
+  	public $custoinfoprod;
+  	public $precobaseprod;
+  	public $sldprod;
+    public $ativoprod;
     public $dtins;
     public $hins;
     public $idusuins;
@@ -46,12 +47,13 @@
                   'codmarca'  =>$this->codmarca,
                   'tipoprod'  =>$this->tipoprod,
                   'codbarprod'=>$this->codbarprod,
-				  'cloteprod' =>$this->cloteprod,
-				  'seriepod'  =>$this->serieprod,
-				  'codfabprod'=>$this->codfabprod,
-				  'custoinfoprod'=>$this->custoinfoprod,
-				  'precobaseprod'=>$this->precobaseprod,
-				  'sldprod'	  =>$this->sldprod,
+				          'cloteprod' =>$this->cloteprod,
+				          'seriepod'  =>$this->serieprod,
+				          'codfabprod'=>$this->codfabprod,
+				          'custoinfoprod'=>$this->custoinfoprod,
+				          'precobaseprod'=>$this->precobaseprod,
+				          'sldprod'	  =>$this->sldprod,
+                  'ativoprod' =>$this->ativoprod,
                   'dtins'     =>$this->dtins,
                   'hins'      =>$this->hins,
                   'idusuins'  =>$this->idusuins
@@ -70,12 +72,13 @@
                                                 'codmarca'  =>$this->codmarca,
                                                 'tipoprod'  =>$this->tipoprod,
                                                 'codbarprod'=>$this->codbarprod,
-												'cloteprod' =>$this->cloteprod,
-												'seriepod'  =>$this->serieprod,
-												'codfabprod'=>$this->codfabprod,
-												'custoinfoprod'=>$this->custoinfoprod,
-												'precobaseprod'=>$this->precobaseprod,
-												'sldprod'	=>$this->sldprod
+												                        'cloteprod' =>$this->cloteprod,
+												                        'seriepod'  =>$this->serieprod,
+												                        'codfabprod'=>$this->codfabprod,
+												                        'custoinfoprod'=>$this->custoinfoprod,
+												                        'precobaseprod'=>$this->precobaseprod,
+												                        'sldprod'	=>$this->sldprod,
+                                                'ativoprod'   =>$this->ativoprod
                                               ]);
     }
 

@@ -43,7 +43,7 @@
                 </div>
                 <div class="breadcomb-ctn">
                   <h2>UNIDADES</h2>
-                  <p>Listagem de  <span class="bread-ntd">Unidades</span></p>
+                  <p>Listagem de  <span>Unidades</span></p>
                 </div>
               </div>
             </div>
@@ -71,7 +71,7 @@
                   <div class="form-example-wrap">
 
                       <div class="cmp-tb-hd">
-                          <h2>Cadastra Unidades
+                          <h2>Cadastrar <i class="fas fa-arrow-alt-circle-right"></i>
                               <a href='cadunidade.php'>
                                 <button data-toggle="tooltip" data-placement="right" title="Cadastra Unidade" class="btn"><i class="notika-icon notika-sent"></i></button>
                               </a>

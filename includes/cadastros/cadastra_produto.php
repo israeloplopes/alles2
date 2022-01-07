@@ -1,14 +1,15 @@
 <?php
 
-
 require __DIR__.'../../../app/Entity/marca.php';
 require __DIR__.'../../../app/Entity/almoxarifado.php';
 require __DIR__.'../../../app/Entity/unidade.php';
+require __DIR__.'../../../app/Entity/fiscal.php';
 require __DIR__.'../../../app/Db/pagination.php';
 
 use \App\Entity\Marca;
 use \App\Entity\Almoxarifado;
 use \App\Entity\Unidade;
+use \App\Entity\fiscal;
 
 $busca      = filter_input(INPUT_GET,'busca',FILTER_SANITIZE_STRING);
 $condicoes1  = [
@@ -26,28 +27,40 @@ $condicoes3  = [
 ];
 $where3 = implode(' and ',$condicoes3);
 
+$condicoes4  = [
+  strlen($busca) ? 'descfisc LIKE "%'.str_replace(' ','%',$busca).'%"' : null
+];
+$where4 = implode(' and ',$condicoes4);
 
 
  $resultmarca = '';
  $marcas     = Marca::getMarcas($where1, null, null);
  foreach($marcas as $marca){
     $resultmarca .= '<option value="'.$marca->codmarca.'">'.$marca->descmarca.'</option>';
-            
-  } 
-  
+
+  }
+
  $resultalmox= '';
  $almoxarifados     = Almoxarifado::getAlmoxarifados($where2, null, null);
  foreach($almoxarifados as $almoxarifado){
     $resultalmox .= '<option value="'.$almoxarifado->codalmox.'">'.$almoxarifado->descalmox.'</option>';
-            
-  } 
-  
+
+  }
+
  $resultunid= '';
  $unidades     = Unidade::getUnidades($where3, null, null);
  foreach($unidades as $unidade){
     $resultunid .= '<option value="'.$unidade->codunid.'">'.$unidade->descunid.'</option>';
-            
-  } 
+
+  }
+
+/*  $resultfisc = '';
+  $ncm     = Fiscal::getNCM($where1, null, null);
+  foreach($ncm as $fiscal){
+    $resultfisc .= '<option value="'.$fiscal->codfisc.'">'.$fiscal->codfisc.'</option>';
+ }
+ <?=TITLE?> - 
+ */
 ?>
 
 <!-- Main Menu area End-->
@@ -65,7 +78,7 @@ $where3 = implode(' and ',$condicoes3);
 								</div>
 								<div class="breadcomb-ctn">
 									<h2>PRODUTOS</h2>
-									<p>Controle de <span class="bread-ntd">Produtos</span></p>
+									<p>Controle de <span>Produtos</span></p>
 								</div>
 							</div>
 						</div>
@@ -90,7 +103,7 @@ $where3 = implode(' and ',$condicoes3);
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<div class="form-example-wrap">
 					<div class="cmp-tb-hd">
-						<h2><?=TITLE?>
+						<h2>Voltar <i class="fas fa-arrow-alt-circle-right"></i>
 							<a href="produto.php">
 								<button data-toggle="tooltip" data-placement="right" title="Voltar" class="btn"><i class="notika-icon notika-sent"></i></button>
 							</a>
@@ -110,29 +123,46 @@ $where3 = implode(' and ',$condicoes3);
 							<input type="text" class="form-control" name="descprod" placeholder="Descrição" value="<?=$obProduto->descprod;?>" onchange="javascript:this.value=this.value.toUpperCase()"; required>
 						</div>
 						<div class="form-group">
-							<label>Descrição</label>
-							<input type="text" class="form-control" name="descprod" placeholder="Descrição" value="<?=$obProduto->descprod;?>" onchange="javascript:this.value=this.value.toUpperCase()"; required>
-						</div>		
-						
-						<div class="form-group">				
-							<label class="control-label col-md-2">Marca</label>  
+							<label>Marca</label>
 							<select class="form-control" name="codmarca" required>
 									 <?=$resultmarca;?>
 							</select>
-						</div>		
-						<div class="form-group">				
-							<label class="control-label col-md-2">Almoxarifado</label>  
+						</div>
+						<div class="form-group">
+							<label>Almoxarifado</label>
 							<select class="form-control" name="codalmox" required>
 									 <?=$resultalmox;?>
 							</select>
-						</div>	
-						<div class="form-group">				
-							<label class="control-label col-md-2">Unidade</label>  
+						</div>
+						<div class="form-group">
+							<label>Unidade</label>
 							<select class="form-control" name="codunid" required>
 									 <?=$resultunid;?>
 							</select>
-						</div>							
-						
+						</div>
+						<div class="form-group">
+							<label>Tipo de Produto</label>
+							<select class="form-control" name="tipoprod" required>
+								<option value="P">PRODUTO</option>
+								<option value="S">SERVIÇO</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label>Produto Ativo?</label>
+							<select class="form-control" name="ativoprod" required>
+								<option value="N">NÃO</option>
+								<option value="S">SIM</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label>NCM</label>
+							<!--<select class="form-control" name="codfisc" required>
+									 <?=$resultfisc;?>
+							</select>-->
+							<input type="text" class="form-control" name="codfisc" placeholder="Código NCM" value="<?=$obProduto->codfisc;?>" maxlenght="8" onchange="javascript:this.value=this.value.toUpperCase()"; required; autofocus;>
+							
+
+						</div>
 						<input type="hidden" name="codemp" value="99">
 						<input type="hidden" name="codfilial" value="1">
 						<input type="hidden" name="idusuins" value="root">

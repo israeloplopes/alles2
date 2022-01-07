@@ -56,15 +56,15 @@
                 </div>
                 <div class="breadcomb-ctn">
                   <h2>PRODUTOS</h2>
-                  <p>Listagem de  <span class="bread-ntd">Produtos</span></p>
+                  <p>Listagem de <span>Produtos</span></p>
                 </div>
               </div>
             </div>
-            <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12">
+            <div class="col-lg-3 col-md-1 col-sm-3 col-xs-3">
               <div class="breadcomb-report">
-                <a href='cadproduto.php'>
+               <!-- <a href='cadproduto.php'>
                   <button data-toggle="tooltip" data-placement="left" title="Cadastra Produto" class="btn"><i class="notika-icon notika-sent"></i></button>
-                </a>
+                </a>-->
               </div>
             </div>
           </div>
@@ -84,9 +84,9 @@
                   <div class="form-example-wrap">
 
                       <div class="cmp-tb-hd">
-                          <h2>Cadastra Produtos
+                          <h2>Cadastrar <i class="fas fa-arrow-alt-circle-right"></i>
                               <a href='cadproduto.php'>
-                                <button data-toggle="tooltip" data-placement="right" title="Cadastra Unidade" class="btn"><i class="notika-icon notika-sent"></i></button>
+                                <button data-toggle="tooltip" data-placement="right" title="Cadastra Produto" class="btn"><i class="notika-icon notika-sent"></i></button>
                               </a>
                           </h2>
                       </div>

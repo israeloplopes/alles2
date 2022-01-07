@@ -16,15 +16,15 @@ use \App\Db\Pagination;
   }
 
   $resultados = '';
-  foreach($marcas as $marca){
+  foreach($ncm as $fiscal){
     $resultados .= '<tr>
-                    <td>'.$marca->codmarca.'</td>
-                    <td>'.$marca->descmarca.'</td>
+                    <td>'.$fiscal->codfisc.'</td>
+                    <td>'.$fiscal->descfisc.'</td>
                     <td>
-                      <a href="edtmarca.php?id='.$marca->id.'">
+                      <a href="edtmarca.php?id='.$fiscal->id.'">
                         <button type="button" class="btn btn-primary">Editar</button>
                       </a>
-                      <a href="excmarca.php?id='.$marca->id.'">
+                      <a href="excmarca.php?id='.$fiscal->id.'">
                         <button type="button" class="btn btn-danger">Excluir</button>
                       </a>
                     </td>
@@ -55,8 +55,8 @@ use \App\Db\Pagination;
                   <i class="notika-icon notika-form"></i>
                 </div>
                 <div class="breadcomb-ctn">
-                  <h2>MARCAS</h2>
-                  <p>Listagem de  <span>Marcas</span></p>
+                  <h2>FISCAL</h2>
+                  <p>Listagem de  <span>NCM</span></p>
                 </div>
               </div>
             </div>

@@ -16,15 +16,15 @@ use \App\Db\Pagination;
   }
 
   $resultados = '';
-  foreach($marcas as $marca){
+  foreach($grupos as $grupo){
     $resultados .= '<tr>
-                    <td>'.$marca->codmarca.'</td>
-                    <td>'.$marca->descmarca.'</td>
+                    <td>'.$grupo->codgrup.'</td>
+                    <td>'.$grupo->descgrup.'</td>
                     <td>
-                      <a href="edtmarca.php?id='.$marca->id.'">
+                      <a href="edtmarca.php?id='.$grupo->id.'">
                         <button type="button" class="btn btn-primary">Editar</button>
                       </a>
-                      <a href="excmarca.php?id='.$marca->id.'">
+                      <a href="excmarca.php?id='.$grupo->id.'">
                         <button type="button" class="btn btn-danger">Excluir</button>
                       </a>
                     </td>
@@ -55,8 +55,8 @@ use \App\Db\Pagination;
                   <i class="notika-icon notika-form"></i>
                 </div>
                 <div class="breadcomb-ctn">
-                  <h2>MARCAS</h2>
-                  <p>Listagem de  <span>Marcas</span></p>
+                  <h2>GRUPOS</h2>
+                  <p>Listagem de  <span>Grupos</span></p>
                 </div>
               </div>
             </div>
@@ -85,8 +85,8 @@ use \App\Db\Pagination;
 
                       <div class="cmp-tb-hd">
                           <h2>Cadastrar <i class="fas fa-arrow-alt-circle-right"></i>
-                              <a href='cadmarca.php'>
-                                <button data-toggle="tooltip" data-placement="right" title="Cadastra Marca" class="btn"><i class="notika-icon notika-sent"></i></button>
+                              <a href='cadgrupo.php'>
+                                <button data-toggle="tooltip" data-placement="right" title="Cadastra Grupo" class="btn"><i class="notika-icon notika-sent"></i></button>
                               </a>
                           </h2>
                       </div>

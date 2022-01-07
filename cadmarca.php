@@ -42,10 +42,6 @@ include __DIR__.'/includes/header.php';
 
 include __DIR__.'/includes/container.php';
 
-include __DIR__.'/mnmb_home.php';
-
-include __DIR__.'/mnds_home.php';
-
 include __DIR__.'/includes/cadastros/cadastra_marca.php';
 
 include __DIR__.'/includes/footer.php';?>
