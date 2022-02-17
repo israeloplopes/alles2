@@ -10,7 +10,7 @@
                 <table class="table table-inner table-vmiddle">
                     <thead>
                         <tr>
-                            <th>id.</th>
+                            <th>Cód.</th>
                             <th>Prod.</th>
                             <th style="width: 60px">Venda</th>
                         </tr>
