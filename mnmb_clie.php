@@ -109,7 +109,7 @@
                                 </li>
                                 <li><a data-toggle="collapse" data-target="#Pagemob" href="#">Usuários</a>
                                     <ul id="Pagemob" class="collapse dropdown-header-top">
-                                        <li><a href="contact.html">Contato</a>
+                                        <li><a href="contato.php">Suporte Técnico</a>
                                         </li>
                                         <!--<li><a href="invoice.html">Invoice</a>
                                         </li>

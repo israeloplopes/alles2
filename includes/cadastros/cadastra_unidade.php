@@ -61,7 +61,9 @@
 						<input type="hidden" name="codfilial" value="1">
 						<input type="hidden" name="idusuins" value="root">
 						<div class="form-group">
-							<button type="submit" class="btn btn-sucess">Enviar</button>
+							<button type="submit" class="btn btn-success notika-btn-success">Enviar</button>
+							<button type="reset"  class="btn btn-warning notika-btn-warning">Cancelar</button> 														
+							
 						</div>
 					</form>
 				</div>

@@ -46,8 +46,8 @@
 						</div>
 						<div class="form-group">
 							<a href="marca.php">
-							<button type="button" class="btn btn-sucess">Cancelar</button>
-							<button type="submit" name="excluir" class="btn btn-Danger">Excluir</button>
+							<button type="button" class="btn btn-success notika-btn-success">Cancelar</button>
+							<button type="submit" name="excluir" class="btn btn-Danger notika-btn-danger">Excluir</button>
 						</div>
                     </form>
                 </div>

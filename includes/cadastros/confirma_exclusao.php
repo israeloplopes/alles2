@@ -46,7 +46,7 @@
 													</div>
 
 													<div class="form-group">
-														<button type="submit" class="btn btn-sucess">Enviar</button>
+														<button type="submit" class="btn btn-danger notika-btn-danger">Sim! Prosseguir.</button>
 													</div>
 
 

@@ -77,7 +77,33 @@
                               </a>
                           </h2>
                       </div>
-
+					  
+					  <form method="get">
+                      <div class="row">
+                          <div class="form-example-wrap mg-t-0">
+                            <div class="cmp-tb-hd cmp-int-hd">
+                              <h4>Faça sua Busca</h4>
+                            </div>
+                            <div class="row">
+                              <div class="col-lg-6 col-md-6 col-sm-1 col-xs-12">
+                                <div class="form-example-int form-example-st">
+                                  <div class="form-group">
+                                    <div class="nk-int-st">
+                                      <input type="text" class="form-control input-sm" name="busca" placeholder="Descrição" value="<?=$busca?>">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-md-4 col-sm-1 col-xs-12">
+                                <div class="form-example-int">
+                                  <button type="submit" class="btn btn-success notika-btn-success">Filtrar</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </form>
+					  
                       <table class="table bg-dark">
                         <thead>
                           <tr>
