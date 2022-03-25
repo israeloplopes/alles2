@@ -33,9 +33,9 @@
                         </div>
                         <div id="cadastro" class="tab-pane in active notika-tab-menu-bg animated flipInX">
                             <ul class="notika-main-menu-dropdown">
-                                <li><a href="marca.php">Tipo de Vendedor</a>
+                                <li><a href="tpvendedor.php">Tipo de Vendedor</a>
                                 </li>
-                                <li><a href="unidade.php">Vendedor</a>
+                                <li><a href="vendedor.php">Vendedor</a>
                                 </li>
                                 <li><a href="index.php">&#8619;<u>Voltar</u></a>
                                 </li>

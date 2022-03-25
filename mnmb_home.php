@@ -24,20 +24,20 @@
                                         <li><a href="unidade.php">Unidades</a></li>
                                         <li><a href="compose-email.html">Grupos</a></li>
                                         <li><a href="produto.php">Produtos</a></li>
-                                        <li><a href="compose-email.html">Tipos de Cliente</a></li>
-                                        <li><a href="compose-email.html">Clientes</a></li>
-                                        <li><a href="compose-email.html">Tipos de Fornecedor</a></li>
-                                        <li><a href="compose-email.html">Fornecedores</a></li>
-										<li><a href="compose-email.html">Tipos de Vendedor</a></li>
-                                        <li><a href="compose-email.html">Vendedores</a></li>	
-										<li><a href="compose-email.html">Tipos de Transportador</a></li>
-                                        <li><a href="compose-email.html">Transportador</a></li>											
+                                        <li><a href="tpcliente.php">Tipos de Cliente</a></li>
+                                        <li><a href="cliente.php">Clientes</a></li>
+                                        <li><a href="tpFornec.php">Tipos de Fornecedor</a></li>
+                                        <li><a href="Fornecedor.php">Fornecedores</a></li>
+										<li><a href="tpVend.php">Tipos de Vendedor</a></li>
+                                        <li><a href="vendedor.php">Vendedores</a></li>	
+										<li><a href="tptransp.php">Tipos de Transportador</a></li>
+                                        <li><a href="transporte.php">Transportador</a></li>											
                                     </ul>
                                 </li>
                                 <li><a data-toggle="collapse" data-target="#demoevent" href="#">Financeiro</a>
                                     <ul id="demoevent" class="collapse dropdown-header-top">
-                                        <li><a href="marca.php">Contas</a></li>
-                                        <li><a href="compose-email.html">Tipos de Cobrança</a></li>
+                                        <li><a href="conta.php">Contas</a></li>
+                                        <li><a href="cobranca.php">Tipos de Cobrança</a></li>
                                         <li><a href="compose-email.html">Formas de Pagamento</a></li>
                                         <li><a href="compose-email.html">Plano de Contas</a></li>
                                         <li><a href="compose-email.html">Centro de Custos</a></li>
@@ -45,7 +45,7 @@
                                 </li>
                                 <li><a data-toggle="collapse" data-target="#demoevent" href="#">Fiscal</a>
                                     <ul id="demoevent" class="collapse dropdown-header-top">
-                                        <li><a href="marca.php">Regra CFOP</a></li>
+                                        <li><a href="cfop.php">Regra CFOP</a></li>
                                         <li><a href="fiscal.php">Classificação Fiscal</a></li>										                                        <li><a href="nota.php">Nota</a></li>										
                                     </ul>
                                 </li>
